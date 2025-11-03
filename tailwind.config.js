@@ -9,6 +9,13 @@ module.exports = {
       '1/6-screen': '16.67vh', // 화면의 1/6 높이를 설정
       '1/8-screen': '12.5vh',  // 화면의 1/8 높이를 설정
     },
+    screens: {
+      'xs': '680px', 
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+    },
   },
   plugins: [require("daisyui")],
 }};
