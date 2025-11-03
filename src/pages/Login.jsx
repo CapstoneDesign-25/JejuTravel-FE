@@ -97,9 +97,9 @@ const Login = () => {
         <Button className="login-btn" type="submit">
           登录
         </Button>
-        <Button className="kakao-btn" type="button" onClick={handleKakaoLogin}>
+        {/* <Button className="kakao-btn" type="button" onClick={handleKakaoLogin}>
           使用Kakao登录
-        </Button>
+        </Button> */}
         {/* WeChat 로그인 버튼 */}
         <Button className="wechat-btn" type="button" onClick={handleWeChatLogin}>
           <img src={wechatIcon} alt="WeChat Logo" style={{ width: "400px", height: "50px", marginRight: "8px" }}
