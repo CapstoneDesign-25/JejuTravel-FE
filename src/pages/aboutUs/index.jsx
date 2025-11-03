@@ -105,48 +105,6 @@ function AboutUs() {
               <div className="px-2">
                 <div className="bg-[#ECF0F1] p-4 rounded-lg shadow-md flex flex-col items-center">
                   <div className="bg-[#2C3E50] w-24 h-24 rounded-full mb-3 flex items-center justify-center">
-                    <img src={hj} alt="HyunJi KIM" className="rounded-full" />
-                  </div>
-                  <h3 className="text-xl font-bold text-[#2C3E50]">HyunJi KIM</h3>
-                  <p className="text-sm text-[#4A4A4A]">前端开发者</p>
-                  <ul className="text-sm text-[#4A4A4A] list-disc list-inside">
-                    <li>React</li>
-                    <li>Javascript</li>
-                    <li>UI/UX 设计</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="px-2">
-                <div className="bg-[#ECF0F1] p-4 rounded-lg shadow-md flex flex-col items-center">
-                  <div className="bg-[#2C3E50] w-24 h-24 rounded-full mb-3 flex items-center justify-center">
-                    <img src={jk} alt="JaeKyoung BANG" className="rounded-full" />
-                  </div>
-                  <h3 className="text-xl font-bold text-[#2C3E50]">JaeKyoung BANG</h3>
-                  <p className="text-sm text-[#4A4A4A]">前端开发者</p>
-                  <ul className="text-sm text-[#4A4A4A] list-disc list-inside">
-                    <li>React</li>
-                    <li>Javascript</li>
-                    <li>UI/UX 设计</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="px-2">
-                <div className="bg-[#ECF0F1] p-4 rounded-lg shadow-md flex flex-col items-center">
-                  <div className="bg-[#2C3E50] w-24 h-24 rounded-full mb-3 flex items-center justify-center">
-                    <img src={m} alt="Min KIM" className="rounded-full" />
-                  </div>
-                  <h3 className="text-xl font-bold text-[#2C3E50]">Min KIM</h3>
-                  <p className="text-sm text-[#4A4A4A]">后端开发者</p>
-                  <ul className="text-sm text-[#4A4A4A] list-disc list-inside">
-                    <li>Java</li>
-                    <li>Springboot</li>
-                    <li>MariaDB</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="px-2">
-                <div className="bg-[#ECF0F1] p-4 rounded-lg shadow-md flex flex-col items-center">
-                  <div className="bg-[#2C3E50] w-24 h-24 rounded-full mb-3 flex items-center justify-center">
                     <img src={hy} alt="HyeYeon KIM" className="rounded-full" />
                   </div>
                   <h3 className="text-xl font-bold text-[#2C3E50]">HyeYeon KIM</h3>
@@ -154,7 +112,7 @@ function AboutUs() {
                   <ul className="text-sm text-[#4A4A4A] list-disc list-inside">
                     <li>Java</li>
                     <li>Springboot</li>
-                    <li>MariaDB</li>
+                    <li>MySqlDB</li>
                   </ul>
                 </div>
               </div>
@@ -168,7 +126,49 @@ function AboutUs() {
                   <ul className="text-sm text-[#4A4A4A] list-disc list-inside">
                     <li>Java</li>
                     <li>Springboot</li>
-                    <li>MariaDB</li>
+                    <li>MySqlDB</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="px-2">
+                <div className="bg-[#ECF0F1] p-4 rounded-lg shadow-md flex flex-col items-center">
+                  <div className="bg-[#2C3E50] w-24 h-24 rounded-full mb-3 flex items-center justify-center">
+                    <img src={hj} alt="HyunJi KIM" className="rounded-full" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[#2C3E50]">YOOBIN SIN</h3>
+                  <p className="text-sm text-[#4A4A4A]">前端开发者</p>
+                  <ul className="text-sm text-[#4A4A4A] list-disc list-inside">
+                    <li>React</li>
+                    <li>Javascript</li>
+                    <li>UI/UX 设计</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="px-2">
+                <div className="bg-[#ECF0F1] p-4 rounded-lg shadow-md flex flex-col items-center">
+                  <div className="bg-[#2C3E50] w-24 h-24 rounded-full mb-3 flex items-center justify-center">
+                    <img src={jk} alt="JaeKyoung BANG" className="rounded-full" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[#2C3E50]">JIWON YOON</h3>
+                  <p className="text-sm text-[#4A4A4A]">前端开发者</p>
+                  <ul className="text-sm text-[#4A4A4A] list-disc list-inside">
+                    <li>React</li>
+                    <li>Javascript</li>
+                    <li>UI/UX 设计</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="px-2">
+                <div className="bg-[#ECF0F1] p-4 rounded-lg shadow-md flex flex-col items-center">
+                  <div className="bg-[#2C3E50] w-24 h-24 rounded-full mb-3 flex items-center justify-center">
+                    <img src={m} alt="Min KIM" className="rounded-full" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[#2C3E50]">HYOJIN LIM</h3>
+                  <p className="text-sm text-[#4A4A4A]">后端开发者</p>
+                  <ul className="text-sm text-[#4A4A4A] list-disc list-inside">
+                    <li>React</li>
+                    <li>Javascript</li>
+                    <li>UI/UX 设计</li>
                   </ul>
                 </div>
               </div>
