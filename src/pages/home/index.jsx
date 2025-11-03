@@ -7,6 +7,7 @@ import HomeShoppingRestaurant from "./components/HomeShoppingRestaurant";
 import HomeAccommodation from "./components/HomeAccommodation";
 import LoginModal from "../../components/LoginModal";
 import SimilarItems from "./components/SimilarItems";
+import { Link } from "react-router-dom";
 import {
   getTourismList,
   getShoppingList,
@@ -231,7 +232,15 @@ function Home() {
       </main>
       <footer className="footer footer-center p-4 bg-base-200 text-base-content">
         <div>
-          <p>Copyright © 2024 - All right reserved by 济州探索</p>
+          <p>Copyright © 2025 - All right reserved by 济州探索</p>
+          <p>
+            <Link
+              to="/aboutus"
+              className="text-[#FF4C4C] font-semibold hover:underline"
+            >
+              关于我们（About Us）
+            </Link>
+          </p>
         </div>
       </footer>
     </div>
