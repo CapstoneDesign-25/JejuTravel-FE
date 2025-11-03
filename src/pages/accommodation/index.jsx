@@ -111,7 +111,7 @@ function Accommodation() {
         />
 
         <div className="mt-4 mb-8 flex flex-wrap gap-4 justify-start">
-          <select
+          {/* <select
             value={stayType}
             onChange={handleStayTypeChange}
             className="p-2 border rounded-md bg-white text-gray-700"
@@ -120,7 +120,7 @@ function Accommodation() {
             <option value="benikia">贝尼基亚</option>
             <option value="goodstay">好住</option>
             <option value="hanok">韩屋</option>
-          </select>
+          </select> */}
           <select
             value={sigunguCode}
             onChange={handleSigunguCodeChange}
