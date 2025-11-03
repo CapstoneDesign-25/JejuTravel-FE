@@ -84,7 +84,7 @@ function HomeShoppingRestaurant({
             <span className="text-[#FF4C4C]">购物</span> 和
             <span className="text-[#FF4C4C]"> 餐馆</span>
           </h2>
-          <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
+          <div className="flex flex-row space-x-4 justify-center sm:justify-end">
             <Link
               to="/shopping"
               className="px-6 py-2 bg-[#FF4C4C] text-white rounded-full hover:bg-[#FF6B6B] transition duration-300 shadow-md hover:shadow-lg text-center"

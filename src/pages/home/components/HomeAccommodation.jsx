@@ -76,7 +76,7 @@ function HomeAccommodation({ accommodationData, isLoading }) {
   return (
     <section className="pt-10 pb-20">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 space-y-4 sm:space-y-0">
           <h2 className="text-4xl font-bold text-base-content">
             在济州 <span className="text-[#FF4C4C]">住宿</span>
           </h2>
