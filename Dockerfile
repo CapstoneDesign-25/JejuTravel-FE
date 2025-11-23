@@ -1,20 +1,21 @@
-# 가져올 이미지를 정의
-FROM node:latest
+# 베이스 이미지
+FROM node:20-alpine
 
-# 경로 설정하기
+# 작업 디렉토리 설정
 WORKDIR /jejutravel-front
 
-# package.json과 package-lock.json을 워킹 디렉토리에 복사
+# package.json 복사
 COPY package*.json ./
 
-# 의존성 설치
-RUN npm install
+# npm 캐시 설정 후 의존성 설치
+RUN npm config set cache /tmp/npm-cache --global \
+    && npm install --legacy-peer-deps
 
-# 현재 디렉토리의 모든 파일을 도커 컨테이너의 워킹 디렉토리에 복사
+# 소스 복사
 COPY . .
 
-# 5173번 포트 노출 (Vite 기본 포트)
+# Vite 포트 노출
 EXPOSE 5173
 
-# Vite 개발 서버 실행
+# 실행 명령
 CMD ["npm", "run", "dev"]
