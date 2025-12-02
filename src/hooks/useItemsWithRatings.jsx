@@ -36,8 +36,6 @@ const useItemsWithRatings = (items) => {
       setError(null);
 
       try {
-        console.log("🔥 items (fetchRatings 시작):", items);  
-
         const itemsWithRatingsPromises = items.map((item) => {
                 console.log("🧩 map 내부 item:", item); 
                 return fetchRating(item)
@@ -45,8 +43,6 @@ const useItemsWithRatings = (items) => {
         });
         const resolvedItems = await Promise.all(itemsWithRatingsPromises);
         
-        console.log("🎉 Promise.all 결과 resolvedItems:", resolvedItems); // <-- map 후 여기!
-
         if (!abortController.signal.aborted) {
           setItemsWithRatings(resolvedItems);
         }
