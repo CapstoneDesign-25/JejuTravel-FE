@@ -13,6 +13,7 @@ const useItemsWithRatings = (items) => {
     }
 
     try {
+
       const response = await getReviewAverage(item.contentId);
       const averageRating =
         response.data.status === "success" ? response.data.data : null;
@@ -35,8 +36,16 @@ const useItemsWithRatings = (items) => {
       setError(null);
 
       try {
-        const itemsWithRatingsPromises = items.map((item) => fetchRating(item));
+        console.log("🔥 items (fetchRatings 시작):", items);  
+
+        const itemsWithRatingsPromises = items.map((item) => {
+                console.log("🧩 map 내부 item:", item); 
+                return fetchRating(item)
+
+        });
         const resolvedItems = await Promise.all(itemsWithRatingsPromises);
+        
+        console.log("🎉 Promise.all 결과 resolvedItems:", resolvedItems); // <-- map 후 여기!
 
         if (!abortController.signal.aborted) {
           setItemsWithRatings(resolvedItems);
